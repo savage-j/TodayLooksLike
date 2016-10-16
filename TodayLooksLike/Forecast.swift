@@ -51,10 +51,6 @@ class Forecast: NSObject {
             }
             
         }
-        
-        
-        
-        
-        
     }
+    
 }

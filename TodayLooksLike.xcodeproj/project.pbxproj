@@ -16,6 +16,7 @@
 		6C0333811DB2C18E002B2534 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0333801DB2C18E002B2534 /* DataSource.swift */; };
 		6C0333831DB2F176002B2534 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0333821DB2F176002B2534 /* Forecast.swift */; };
 		6C0333851DB31700002B2534 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0333841DB31700002B2534 /* Temperature.swift */; };
+		6C5099DE1DB3FC9500D92EFA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5099DD1DB3FC9500D92EFA /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		6C0333801DB2C18E002B2534 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		6C0333821DB2F176002B2534 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		6C0333841DB31700002B2534 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		6C5099DD1DB3FC9500D92EFA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				6C03336A1DB2A287002B2534 /* Info.plist */,
 				6C0333821DB2F176002B2534 /* Forecast.swift */,
 				6C0333841DB31700002B2534 /* Temperature.swift */,
+				6C5099DD1DB3FC9500D92EFA /* Utilities.swift */,
 			);
 			path = TodayLooksLike;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5099DE1DB3FC9500D92EFA /* Utilities.swift in Sources */,
 				6C0333831DB2F176002B2534 /* Forecast.swift in Sources */,
 				6C0333811DB2C18E002B2534 /* DataSource.swift in Sources */,
 				6C0333611DB2A287002B2534 /* WeatherViewController.swift in Sources */,
@@ -422,6 +426,7 @@
 				6C03337A1DB2A287002B2534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C03337B1DB2A287002B2534 /* Build configuration list for PBXNativeTarget "TodayLooksLikeTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				6C03337D1DB2A287002B2534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
