@@ -19,6 +19,7 @@
 		6C5099DE1DB3FC9500D92EFA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5099DD1DB3FC9500D92EFA /* Utilities.swift */; };
 		6C95166E1DB4491700F0AAE8 /* TemperatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95166D1DB4491700F0AAE8 /* TemperatureTests.swift */; };
 		6C9516701DB451D800F0AAE8 /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95166F1DB451D800F0AAE8 /* ForecastTests.swift */; };
+		6C9516721DB4791B00F0AAE8 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9516711DB4791B00F0AAE8 /* UtilitiesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		6C5099DD1DB3FC9500D92EFA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		6C95166D1DB4491700F0AAE8 /* TemperatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureTests.swift; sourceTree = "<group>"; };
 		6C95166F1DB451D800F0AAE8 /* ForecastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTests.swift; sourceTree = "<group>"; };
+		6C9516711DB4791B00F0AAE8 /* UtilitiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				6C0333751DB2A287002B2534 /* Info.plist */,
 				6C95166D1DB4491700F0AAE8 /* TemperatureTests.swift */,
 				6C95166F1DB451D800F0AAE8 /* ForecastTests.swift */,
+				6C9516711DB4791B00F0AAE8 /* UtilitiesTests.swift */,
 			);
 			path = TodayLooksLikeTests;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				6C95166E1DB4491700F0AAE8 /* TemperatureTests.swift in Sources */,
 				6C9516701DB451D800F0AAE8 /* ForecastTests.swift in Sources */,
+				6C9516721DB4791B00F0AAE8 /* UtilitiesTests.swift in Sources */,
 				6C0333741DB2A287002B2534 /* TodayLooksLikeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
