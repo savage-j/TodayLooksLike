@@ -102,10 +102,10 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     
     func updateForecastText() {
         let forecast = self.forecast()
-        let temps = forecast.temps!
-        let maxTemp = String(format: "%.0f°", temps.maxTemp!)
-        let minTemp = String(format: "%.0f°", temps.minTemp!)
-        self.aveTempLabel.text = String(format: "%.0f°", temps.averageTemp!)
+        let temps = forecast.temps
+        let maxTemp = String(format: "%.0f°", temps.maxTemp)
+        let minTemp = String(format: "%.0f°", temps.minTemp)
+        self.aveTempLabel.text = String(format: "%.0f°", temps.averageTemp)
         let descrip = (forecast.desc!).uppercaseFirst
         self.forecastTextLabel.text = "\(descrip). The high will be \(maxTemp). The low will be \(minTemp)"
     }

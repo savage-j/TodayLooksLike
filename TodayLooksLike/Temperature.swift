@@ -9,12 +9,9 @@
 import UIKit
 
 class Temperature: NSObject {
-    var averageTemp: Double?
-    var eveTemp: Double?
-    var nightTemp: Double?
-    var mornTemp: Double?
-    var minTemp: Double?
-    var maxTemp: Double?
+    var averageTemp: Double = 0
+    var minTemp: Double = 0
+    var maxTemp: Double = 0
     
     override init() {
         super.init()
@@ -22,12 +19,9 @@ class Temperature: NSObject {
     
     convenience init(tempDictionary: NSDictionary) {
         self.init()
-        averageTemp = tempDictionary["day"] as? Double
-        eveTemp = tempDictionary["eve"] as? Double
-        nightTemp = tempDictionary["night"] as? Double
-        mornTemp = tempDictionary["morn"] as? Double
-        minTemp = tempDictionary["min"] as? Double
-        maxTemp = tempDictionary["max"] as? Double
+        averageTemp = tempDictionary["day"] as! Double
+        minTemp = tempDictionary["min"] as! Double
+        maxTemp = tempDictionary["max"] as! Double
     }
 
 }

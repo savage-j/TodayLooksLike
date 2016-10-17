@@ -14,12 +14,13 @@ class Forecast: NSObject {
     var windSpeed: Double?
     var precipitation: Double?
     var pressure: Double?
-    var temps: Temperature?
+    var temps: Temperature
     var desc: String?
     var icon: String?
     var mainDescription: String?
     
     override init(){
+        self.temps = Temperature()
         super.init()
     }
     
