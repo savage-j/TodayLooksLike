@@ -78,21 +78,21 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
                 self.mainDescLabel.text = forecast.mainDescription!
             }
             if forecast.humidity != nil {
-                //self.humidityLabel.adjustsFontSizeToFitWidth = true
+                self.humidityLabel.adjustsFontSizeToFitWidth = true
                 self.humidityLabel.text = String(format: "%d %%",forecast.humidity!)
             }
             if forecast.pressure != nil {
-                //self.pressureLabel.adjustsFontSizeToFitWidth = true
+                self.pressureLabel.adjustsFontSizeToFitWidth = true
                 let pressureConverted = Utilities().convert(hPaValue: forecast.pressure!)
                 self.pressureLabel.text = String(format: "%.1f inHg", pressureConverted)
             }
             if forecast.precipitation != nil {
-                //self.precipLabel.adjustsFontSizeToFitWidth = true
+                self.precipLabel.adjustsFontSizeToFitWidth = true
                 let precipConverted = Utilities().convert(precipValue: forecast.precipitation!)
                 self.precipLabel.text = String(format: "%.1f in", precipConverted)
             }
             if forecast.windSpeed != nil {
-                //self.windLabel.adjustsFontSizeToFitWidth = true
+                self.windLabel.adjustsFontSizeToFitWidth = true
                 self.windLabel.text = String(format: "%.0f mph", forecast.windSpeed!)
             }
             
