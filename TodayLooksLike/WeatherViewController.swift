@@ -33,7 +33,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         manager.requestWhenInUseAuthorization()
-        manager.startUpdatingLocation()
+        
         registerForNotification()
         registerForImageNotification()
     }
@@ -43,7 +43,6 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     //MARK: CLLocationManagerDelegate Methods
-    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation: CLLocation = locations[0]
         CLGeocoder().reverseGeocodeLocation(userLocation) { (placemarks, error) in
@@ -58,8 +57,32 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    //MARK: DataSource shared instance
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        checkAuthorization()
+    }
     
+    //MARK: Check authorization
+    func checkAuthorization() {
+        let authStatus = CLLocationManager.authorizationStatus()
+        
+        if authStatus == .denied || authStatus == .restricted {
+            showLocationDeniedAlert()
+            return
+        }
+        manager.startUpdatingLocation()
+    }
+    
+    func showLocationDeniedAlert() {
+        let alert = UIAlertController(title: "Location Services Disabled", message: "Please enable location services for this app in Settings", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alert.addAction(ok)
+        
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    //MARK: DataSource shared instance
     func forecast() -> Forecast {
         return DataSource.sharedInstance.forecast!
     }
